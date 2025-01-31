@@ -1,9 +1,13 @@
 document.addEventListener("DOMContentLoaded", function() {
-    let texto = "Hola, soy Fakaneitor 🚀";
+    let texto = "Hola, soy Facundo Guasone 🚀";
     let i = 0;
+    let titulo = document.getElementById("titulo");
+    
+    titulo.textContent = ""; // Asegura que no haya texto previo
+    
     function escribir() {
         if (i < texto.length) {
-            document.getElementById("titulo").textContent += texto[i];
+            titulo.textContent += texto[i];
             i++;
             setTimeout(escribir, 100);
         }
